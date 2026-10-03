@@ -1,0 +1,36 @@
+name: Hackathon
+description: Track a hackathon Blockchain Lab may enter
+title: "[Hackathon] <name>"
+labels: ["hackathon", "status:open"]
+body:
+  - type: input
+    id: name
+    attributes: {label: Name}
+    validations: {required: true}
+  - type: input
+    id: link
+    attributes: {label: Official link, description: Organiser page (not an aggregator)}
+    validations: {required: true}
+  - type: input
+    id: dates
+    attributes: {label: Dates, description: "Build window and submission deadline, with time zone if known"}
+    validations: {required: true}
+  - type: input
+    id: prize
+    attributes: {label: Prize pool, description: As stated by the organiser}
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options: ["Online", "In person", "Hybrid"]
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform / source
+      options: ["Devpost", "ETHGlobal", "DoraHacks", "Gitcoin", "Encode Club", "Devfolio", "Organiser site", "Other"]
+  - type: textarea
+    id: tracks
+    attributes: {label: Tracks / themes and fit with Blockchain Lab}
+  - type: textarea
+    id: verified
+    attributes: {label: Verification, description: "Where and when the details above were checked"}

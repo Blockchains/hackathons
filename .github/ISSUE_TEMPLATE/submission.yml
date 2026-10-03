@@ -1,0 +1,26 @@
+name: Submission
+description: Track our entry to a hackathon
+title: "[Entry] <project> → <hackathon>"
+labels: ["entry", "status:building"]
+body:
+  - type: input
+    id: hackathon
+    attributes: {label: Hackathon issue, description: "e.g. #3"}
+    validations: {required: true}
+  - type: input
+    id: repo
+    attributes: {label: Project repo, description: "Create from Blockchains/hackathon-entry-template"}
+  - type: input
+    id: deadline
+    attributes: {label: Submission deadline (with time zone)}
+    validations: {required: true}
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      value: |
+        - [ ] Registered / applied
+        - [ ] Team confirmed
+        - [ ] Repo created from template
+        - [ ] Demo video recorded
+        - [ ] Submitted on the platform
