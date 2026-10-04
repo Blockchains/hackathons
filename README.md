@@ -19,3 +19,16 @@ Tracker for blockchain / web3 hackathons Blockchain Lab may enter. One issue per
 | ETHGlobal Mumbai | 5 – 7 Nov 2026 (submissions by 8 Nov 09:00 IST) | Partner prize pools (largest $20,000) | In person, Mumbai | https://ethglobal.com/events/mumbai |
 
 Not seeded: no currently open DoraHacks or Gitcoin web3 hackathon could be verified on the organiser's own page on 3 Oct 2026 (DoraHacks blocks automated reads; Gitcoin had no hackathon listed).
+
+Live calendar of events and hackathons: **https://blockchains.github.io/events/**
+
+## Licence
+
+No licence file; this is an issue tracker. Event details belong to their organisers.
+
+## Contributing
+
+Issues and pull requests are welcome. Please read the [contributing guide](https://github.com/Blockchains/.github/blob/main/CONTRIBUTING.md), [code of conduct](https://github.com/Blockchains/.github/blob/main/CODE_OF_CONDUCT.md) and [security policy](https://github.com/Blockchains/.github/blob/main/SECURITY.md) first.
+
+---
+Built by Blockchain Lab — [blockchainlab.com](https://blockchainlab.com/?utm_source=github&utm_medium=readme&utm_campaign=hackathons)
