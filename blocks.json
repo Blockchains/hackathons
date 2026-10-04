@@ -1,0 +1,68 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Blockchains/.github/main/docs/blocks.schema.json",
+  "schema_version": "1.0",
+  "name": "hackathons",
+  "repo": "Blockchains/hackathons",
+  "summary": "Blockchain Lab hackathon tracker: one GitHub issue per open blockchain/web3 hackathon (issue forms for hackathons and submissions) plus a README table of verified upcoming events.",
+  "kind": [
+    "docs",
+    "dataset"
+  ],
+  "stability": "stable",
+  "license": "NOASSERTION",
+  "entrypoints": [
+    {
+      "type": "http",
+      "name": "issues API",
+      "ref": "https://api.github.com/repos/Blockchains/hackathons/issues",
+      "usage": "gh issue list -R Blockchains/hackathons"
+    },
+    {
+      "type": "file",
+      "name": ".github/ISSUE_TEMPLATE/",
+      "ref": ".github/ISSUE_TEMPLATE/hackathon.yml"
+    }
+  ],
+  "inputs": [
+    {
+      "name": "issue form",
+      "type": "GitHub issue"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "tracker issues",
+      "type": "GitHub issues"
+    },
+    {
+      "name": "README table",
+      "type": "Markdown"
+    }
+  ],
+  "deps": [
+    "gh"
+  ],
+  "compatible_with": [
+    {
+      "repo": "Blockchains/hackathon-entry-template",
+      "how": "link the tracker issue from your entry"
+    },
+    {
+      "repo": "Blockchains/blockchainlab-feeds",
+      "how": "automated hackathon feed"
+    },
+    {
+      "repo": "Blockchains/blockchainlab-api",
+      "how": "`hackathons` dataset"
+    }
+  ],
+  "tests": {
+    "command": "gh issue list -R Blockchains/hackathons --limit 5",
+    "network": true
+  },
+  "docs": {
+    "readme": "README.md",
+    "agents": "AGENTS.md",
+    "llms": "llms.txt"
+  }
+}

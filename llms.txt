@@ -1,0 +1,22 @@
+# hackathons
+
+> Blockchain Lab hackathon tracker: one GitHub issue per open blockchain/web3 hackathon (issue forms for hackathons and submissions) plus a README table of verified upcoming events.
+
+## Docs
+
+- [README](https://raw.githubusercontent.com/Blockchains/hackathons/main/README.md): overview, install and the 'Use as a building block' section
+- [AGENTS.md](https://raw.githubusercontent.com/Blockchains/hackathons/main/AGENTS.md): setup, build/test commands, structure map, conventions and rules for AI coding agents
+- [blocks.json](https://raw.githubusercontent.com/Blockchains/hackathons/main/blocks.json): machine-readable building-block manifest (entrypoints, inputs, outputs, deps, compatible blocks)
+
+## Key files
+
+- [README.md](https://github.com/Blockchains/hackathons/blob/main/README.md): events
+- [.github/ISSUE_TEMPLATE/hackathon.yml](https://github.com/Blockchains/hackathons/blob/main/.github/ISSUE_TEMPLATE/hackathon.yml): form
+
+## Related
+
+- [Build with Blocks](https://github.com/Blockchains/.github/blob/main/docs/BUILD-WITH-BLOCKS.md): how to assemble projects from Blockchains repos
+- [Org llms.txt](https://blockchains.github.io/llms.txt) · [blocks catalogue](https://blockchains.github.io/blocks.json)
+- [Blockchains/hackathon-entry-template](https://github.com/Blockchains/hackathon-entry-template): link the tracker issue from your entry
+- [Blockchains/blockchainlab-feeds](https://github.com/Blockchains/blockchainlab-feeds): automated hackathon feed
+- [Blockchains/blockchainlab-api](https://github.com/Blockchains/blockchainlab-api): `hackathons` dataset

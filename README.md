@@ -22,6 +22,38 @@ Not seeded: no currently open DoraHacks or Gitcoin web3 hackathon could be verif
 
 Live calendar of events and hackathons: **https://blockchains.github.io/events/**
 
+<!-- blocks:start -->
+## Use as a building block
+
+> **For AI agents and builders:** read [`AGENTS.md`](AGENTS.md) (setup, commands, structure, rules), [`llms.txt`](llms.txt) (doc map) and the machine-readable [`blocks.json`](blocks.json) ([schema](https://github.com/Blockchains/.github/blob/main/docs/BLOCKS-SCHEMA.md)). How all Blockchains blocks fit together: **[Build with Blocks](https://github.com/Blockchains/.github/blob/main/docs/BUILD-WITH-BLOCKS.md)** · org catalogue: [https://blockchains.github.io/blocks.json](https://blockchains.github.io/blocks.json).
+
+**What it exports**
+
+| Export | Type | Install / access |
+|---|---|---|
+| `issues API` | http | `gh issue list -R Blockchains/hackathons` |
+| `.github/ISSUE_TEMPLATE/` | file | `.github/ISSUE_TEMPLATE/hackathon.yml` |
+
+**Minimal example**
+
+```bash
+gh issue list -R Blockchains/hackathons --state open --json number,title,url
+```
+
+**Inputs → outputs**
+
+- In: `issue form` (GitHub issue)
+- Out: `tracker issues` (GitHub issues); `README table` (Markdown)
+
+**Composes with**
+
+- [Blockchains/hackathon-entry-template](https://github.com/Blockchains/hackathon-entry-template): link the tracker issue from your entry
+- [Blockchains/blockchainlab-feeds](https://github.com/Blockchains/blockchainlab-feeds): automated hackathon feed
+- [Blockchains/blockchainlab-api](https://github.com/Blockchains/blockchainlab-api): `hackathons` dataset
+
+**Versioning & stability:** `stable`. Issue forms are stable; README table is refreshed by hand.
+<!-- blocks:end -->
+
 ## Licence
 
 No licence file; this is an issue tracker. Event details belong to their organisers.
